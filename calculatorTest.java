@@ -50,15 +50,19 @@ public class calculatorTest {
         calculator calc = new calculator(n1, n2);
         if (op == 1) {
             calc.sum();
+            System.out.println("Sum successful...");
         }
         else if (op == 2) {
             calc.subtraction();
+            System.out.println("Subtraction successful...");
         }
         else if (op == 3) {
             calc.product();
+            System.out.println("Product successful...");
         }
         else if (op == 4) {
             calc.division();
+            System.out.println("Division successful...");
         }
         else {
             System.out.println("Invalid input, try running the program again");
