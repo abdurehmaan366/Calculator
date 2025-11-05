@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class calculator {
 
     int a;
@@ -14,25 +16,52 @@ class calculator {
         b = cpy_b;
     }
 
-    public int sum (int a, int b) {
+    public int sum () {
         return a + b;
     }
 
-    public int subtraction (int a, int b) {
+    public int subtraction () {
         return a - b;
     }
 
-    public int product (int a, int b) {
+    public int product () {
         return a * b;
     }
 
-    public int division (int a, int b) {
+    public int division () {
         return a / b;
     }
 }
 
 public class calculatorTest {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         System.out.println("My Calculator (My first github trial)");
+        System.out.println("Enter 2 numbers (Integers) with spaces: ");
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+
+        System.out.println("Enter an operation to perform: ");
+        System.out.println("1. Sum \n2. SUbtract \n3. Product \n4. Division");
+        int op = sc.nextInt();
+
+
+        calculator calc = new calculator(n1, n2);
+        if (op == 1) {
+            calc.sum();
+        }
+        else if (op == 2) {
+            calc.subtraction();
+        }
+        else if (op == 3) {
+            calc.product();
+        }
+        else if (op == 4) {
+            calc.division();
+        }
+        else {
+            System.out.println("Invalid input, try running the program again");
+        }
     }
 }
