@@ -49,19 +49,23 @@ public class calculatorTest {
 
         calculator calc = new calculator(n1, n2);
         if (op == 1) {
-            calc.sum();
+            int result = calc.sum();
+            System.out.println("Result: " + result);
             System.out.println("Sum successful...");
         }
         else if (op == 2) {
-            calc.subtraction();
+            int result = calc.subtraction();
+            System.out.println("Result: " + result);
             System.out.println("Subtraction successful...");
         }
         else if (op == 3) {
-            calc.product();
+            int result = calc.product();
+            System.out.println("Result: " + result);
             System.out.println("Product successful...");
         }
         else if (op == 4) {
-            calc.division();
+            int result = calc.division();
+            System.out.println("Result: " + result);
             System.out.println("Division successful...");
         }
         else {
