@@ -57,30 +57,35 @@ public class calculatorTest {
         int n2 = sc.nextInt();
 
         System.out.println("Enter an operation to perform: ");
-        System.out.println("1. Sum \n2. SUbtract \n3. Product \n4. Division");
+        System.out.println("1. Sum \n2. SUbtract \n3. Product \n4. Division \n5. Sqrt");
         int op = sc.nextInt();
 
 
         calculator calc = new calculator(n1, n2);
         if (op == 1) {
-            int result = calc.sum();
+            double result = calc.sum();
             System.out.println("Result: " + result);
             System.out.println("Sum successful...");
         }
         else if (op == 2) {
-            int result = calc.subtraction();
+            double result = calc.subtraction();
             System.out.println("Result: " + result);
             System.out.println("Subtraction successful...");
         }
         else if (op == 3) {
-            int result = calc.product();
+            double result = calc.product();
             System.out.println("Result: " + result);
             System.out.println("Product successful...");
         }
         else if (op == 4) {
-            int result = calc.division();
+            double result = calc.division();
             System.out.println("Result: " + result);
             System.out.println("Division successful...");
+        }
+        else if (op == 5) {
+            double result = calc.sqrt();
+            System.out.println("Result: " + result);
+            System.out.println("Sqrt successful...");
         }
         else {
             System.out.println("Invalid input, try running the program again");
