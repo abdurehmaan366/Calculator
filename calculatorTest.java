@@ -7,7 +7,8 @@ class calculator {
 
     // no args constructor
     public calculator () {
-
+        a = 5;
+        b = 6;
     }
 
     // 2 args constructor
@@ -30,6 +31,19 @@ class calculator {
 
     public int division () {
         return a / b;
+    }
+
+    public double sqrt() {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("You want sqrt for (1) num1 or (2) num2? ");
+        int choice = sc.nextInt();
+
+        if (choice == 1) {
+            return Math.sqrt(a);
+        }
+        else {
+            return Math.sqrt(b);
+        }
     }
 }
 
