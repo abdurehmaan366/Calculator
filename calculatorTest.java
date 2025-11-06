@@ -32,7 +32,7 @@ class calculator {
     public int division () {
         return a / b;
     }
-
+    
     public double sqrt() {
         Scanner sc = new Scanner (System.in);
         System.out.println("You want sqrt for (1) num1 or (2) num2? ");
